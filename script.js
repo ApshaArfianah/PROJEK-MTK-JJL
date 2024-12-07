@@ -8,8 +8,8 @@ function calculateDiscount() {
         return;
     }
 
-    const discountedPrice = price - (price * discount / 100); // Hitung harga setelah diskon
-    document.getElementById("discountResult").innerText = `Harga setelah diskon: Rp ${discountedPrice.toFixed(2)}`; // Tampilkan hasil
+    const discountPrice = price - (price * discount / 100); // Hitung harga setelah diskon
+    document.getElementById("discountResult").innerText = `Harga setelah diskon: Rp ${discountPrice.toFixed(2)}`; // Tampilkan hasil
 }
 
 // Kalkulator Persentase
@@ -36,5 +36,5 @@ function convertTemperature() {
     }
 
     const fahrenheit = (celsius * 9/5) + 32; // Konversi ke Fahrenheit
-    document.getElementById("temperatureResult").innerText = `${celsius}°C sama dengan ${fahrenheit.toFixed(2)}°F`s; // Tampilkan hasil
+    document.getElementById("temperatureResult").innerText = `${celsius}°C sama dengan ${fahrenheit.toFixed(2)}°F`; // Tampilkan hasil
 }
